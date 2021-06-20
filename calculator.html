@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claculator</title>
+</head>
+<link rel="stylesheet" href="calulator.css">
+
+<body onload="screenLoad()">
+  <table>
+
+    <tr>
+      <td colspan="5" style="border-radius: 10px; background: #f1f3f4">
+        <div id="expression" style="height: 30px;"></div>
+        <div style="padding: 0 10px;"><input style="width: 100%; border: none;" id="screens" value="" /></div> 
+      </td>
+    </tr>
+  
+    <tr>
+      <td><button class="key_color" onclick="sin()">Sin</button></td>
+      <td><button class="key_color" onclick="cell('(')">(</button></td>
+      <td><button class="key_color" onclick="cell(')')">)</button></td>
+      <td><button class="key_color" onclick="dellcharacters()">DELL</button></td>
+      <td><button class="key_color" onclick="dellfull()">AC</button></td>
+  
+    </tr>
+    <tr>
+      <td><button class="key_color" onclick="cos()">Cos</button></td>
+      <td><button onclick="cell(7)" >7</button></td>
+      <td><button onclick="cell(8)" >8</button></td>
+      <td><button onclick="cell(9)" >9</button></td>
+      <td><button class="key_color" onclick="cell('+')">+</button></td>
+    </tr>
+    <tr>
+      <td><button class="key_color" onclick="tan()">Tan</button></td>
+      <td><button onclick="cell(4)" >4</button></td>
+      <td><button onclick="cell(5)" >5</button></td>
+      <td><button onclick="cell(6)" >6</button></td>
+      <td><button  class="key_color" onclick="cell('-')">-</button></td> 
+    </tr>
+    <tr>
+      <td><button class="key_color" onclick="tan()">Log</button></td>
+      <td><button onclick="cell(1)" >1</button></td>
+      <td><button onclick="cell(2)">2</button></td>
+      <td><button onclick="cell(3)">3</button></td>
+      <td><button class="key_color" onclick="cell('*')">X</button></td>
+    </tr>
+    <tr>
+      <td><button class="key_color" onclick="Rad()">Rad</button></td>
+      <td><button onclick="cell(0)">0</button></td>
+      <td><button onclick="cell('.')">.</button></td>
+      <td><button onclick="total()">=</button></td>
+      <td><button class="key_color" onclick="cell('/')">/</button></td>
+    
+    </tr>
+  </table>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
